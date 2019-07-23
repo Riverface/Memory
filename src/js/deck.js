@@ -93,10 +93,10 @@ Deck.prototype.AddButtons = function(){
 
 Deck.prototype.addIDs = function(){
   console.log(this);
- var x = 1;
+  // var curit = 1;
   
   this.cards.forEach(function(thiscard,curit){
-    thiscard.id = 1;
+    thiscard.id = curit;
     console.log(curit,thiscard.id);
   });
   console.log("DIVIDER");

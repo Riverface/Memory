@@ -7,15 +7,15 @@ module.exports = {
   entry: './src/js/scripts.js',
   output: {
     filename: 'bundle.js',
-    path: path.resolve(__dirname, 'dist')
+    path: path.resolve(__dirname, 'docs')
   },
   devtool: 'eval-source-map',
   devServer: {
-    contentBase: './dist'
+    contentBase: './docs'
   },
   plugins: [
     new UglifyJsPlugin(),    // new line
-    new CleanWebpackPlugin(['dist']),
+    new CleanWebpackPlugin(['docs']),
     new HtmlWebpackPlugin({
       title: 'Memory',
       template: './src/index.html',
