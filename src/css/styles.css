@@ -1,0 +1,31 @@
+.card{
+  border:1px solid;
+  border-radius: 5px;
+  width: 200px;
+  height: 250px;
+  display:inline-grid;
+  margin:10px;
+}
+.card:nth-of-type(){
+  display:inline-grid;
+}
+#game{
+  height: 550px;
+  width: 1000px;
+  grid-template-columns: 100px 50px 100px;
+  grid-template-rows: 80px auto 80px; 
+  grid-column-gap: 10px;
+  grid-row-gap: 15px;
+}
+#game:nth-child(5){
+  display:inline-grid;
+}
+.cardimage{
+  height: 100px;
+  width: 100px;
+}
+.cardback{
+  height: 100px;
+  width: 100px;
+  justify-content: center;
+}
