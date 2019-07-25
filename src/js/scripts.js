@@ -13,23 +13,35 @@ import "./../media/4.mp3";
 import "./../media/5.png";
 import "./../media/5.wav";
 
+import "./../media/6.png";
+import "./../media/6.wav";
+
+import "./../media/7.png";
+import "./../media/7.wav";
+
+import "./../media/8.png";
+import "./../media/8.wav";
+
+import "./../media/9.png";
+import "./../media/9.wav";
+
+import "./../media/10.png";
+import "./../media/10.wav";
+
 import "./../media/bg.mp3";
 import './../css/styles.css';
+import './../media/Laff.wav';
+import './../media/Nice.wav';
+import './../media/WOW.mp3';
 
 import {Deck, Card} from "./deck.js";
 $(document).ready(function() {
+  console.log("BBBBBBBBBBB");
   // Stuff to do as soon as the DOM is ready
   $("#generate").click(function(){
-    var deck = new Deck(6);
-    deck.Generatepool();
-    console.log("divider");
-    console.log("oioip", deck);
-    console.log("divider");
-    deck.addIDs();
-    deck.cards = deck.Shuffle();
-    $("#game").html(deck.Print());
-    deck.AddButtons();
-    $("#generate").hide();
+    console.log("AAAAAAAAAAAAAAA");
+    var deck = new Deck($("#pairs").val());
+    deck.GameReady();
     console.log(deck);
   });
 

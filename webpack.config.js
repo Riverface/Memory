@@ -18,8 +18,8 @@ module.exports = {
     new CleanWebpackPlugin(['docs']),
     new HtmlWebpackPlugin({
       title: 'Memory',
-      template: './src/index.html',
-      inject: 'body'
+      template: './src/index.html',  
+      inject: 'head'
     })
 
   ],

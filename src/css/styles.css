@@ -1,14 +1,8 @@
 .card{
-  border:1px solid;
-  border-radius: 5px;
-  width: 200px;
-  height: 250px;
-  display:inline-grid;
-  margin:10px;
-}
-.card:nth-of-type(){
+
   display:inline-grid;
 }
+
 #game{
   height: 550px;
   width: 1000px;
@@ -21,11 +15,28 @@
   display:inline-grid;
 }
 .cardimage{
+  margin-left:40%;
+  margin-top:30%;
   height: 100px;
-  width: 100px;
 }
 .cardback{
-  height: 100px;
-  width: 100px;
-  justify-content: center;
+  border:1px solid;
+  border-radius: 5px;
+  width: 200px;
+  height: 250px;
+  background-color:lightblue;
+
+}
+.cardfront{
+  background-color:pink;
+  border:1px solid;
+  border-radius: 5px;
+  width: 200px;
+  height: 250px;
+}
+.name{
+  margin-left:30%;
+}
+.jumbotron{
+  padding-left:20px;
 }
